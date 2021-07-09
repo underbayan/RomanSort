@@ -15,7 +15,7 @@ Sort blocks  with nested blocks
 - step2: ctrl+shift+p
 - step3: type ">roman.sort"
 
-- ![Alt Text](demo.gif)
+- ![Alt Text](demo1.gif)
 
 ## Requirements
 N/A
