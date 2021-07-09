@@ -1,16 +1,21 @@
 # romansort README
 
-Sort any part section in c-style code, including JSON data
+Sort any part sections for javascript-style code in intelligent way
+
+
 
 ## Features
 
-Sort your code in intelligent way
+Sort sections contain comments
+Sort blocks  with nested blocks
 
-## guide
+## guidance
 
-step1: select your code section in editor
-step2: ctrl+shift+p
-step3: type ">roman.sort"
+- step1: select your code section in editor
+- step2: ctrl+shift+p
+- step3: type ">roman.sort"
+
+- ![Alt Text](demo.gif)
 
 ## Requirements
 N/A

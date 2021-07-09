@@ -28,9 +28,10 @@ function getSelection(textEditor, startLine, startPos, endLine, endPos) {
 	const selectedLines = [];
 	for (let i = startLine; i <= endLine; ++i) {
 		let text = textEditor.document.lineAt(i).text; if (i === endLine) { text = text.slice(0, endPos); };
-		if (i === startLine) { text = text.slice(startPos); } if (text) { selectedLines.push(text); }
+		if (i === startLine) { text = text.slice(startPos); }
+		selectedLines.push(text);
 	}
-	return selectedLines.join("\n");
+	return selectedLines.join("\n") + "\n";
 }
 
 function setSelection(textEditor, startLine, startPos, endLine, endPos, sortedText) {

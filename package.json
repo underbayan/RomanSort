@@ -2,7 +2,7 @@
   "name": "romansort",
   "displayName": "RomanSort",
   "description": "intelligent sort for C style language",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -13,7 +13,8 @@
     "onCommand:roman.sort",
     "onCommand:roman.sort.reverse"
   ],
-  "icon": "./icon.png",
+  "repository": "",
+  "icon": "icon.png",
   "publisher": "RomanTai",
   "main": "./extension.js",
   "contributes": {
