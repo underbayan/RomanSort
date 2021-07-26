@@ -1,0 +1,12 @@
+
+const { lexer } = require('../../lib/tokenize')
+const { syntactic } = require('../../lib/syntactic')
+const { javascript2 } = require('./mock')
+const assert = require('assert')
+const tokens = lexer(javascript2.methods)
+const blockList = syntactic(tokens)
+assert(blockList.map(r => r.mergedText).join("") === javascript2.methods)
+const tokens2 = lexer(javascript2.properties)
+const blockList2 = syntactic(tokens2)
+console.log(blockList2)
+assert(blockList2.map(r => r.mergedText).join("") === javascript2.properties)
