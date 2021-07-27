@@ -1,8 +1,8 @@
 {
   "name": "romansort",
   "displayName": "RomanSort",
-  "description": "intelligent sort for C style language",
-  "version": "0.0.8",
+  "description": "Intelligent sort tool for javascript style language",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.57.0"
   },
