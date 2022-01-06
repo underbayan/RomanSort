@@ -2,7 +2,7 @@
   "name": "romansort",
   "displayName": "RomanSort",
   "description": "Intelligent sort tool for javascript style language",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "engines": {
     "vscode": "^1.57.0"
   },
