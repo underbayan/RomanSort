@@ -31,7 +31,7 @@ function getSelection(textEditor, startLine, startPos, endLine, endPos) {
 		if (i === startLine) { text = text.slice(startPos); }
 		selectedLines.push(text);
 	}
-	return selectedLines.join("\n") + "\n";
+	return selectedLines.join("\n");
 }
 
 function setSelection(textEditor, startLine, startPos, endLine, endPos, sortedText) {
