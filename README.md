@@ -1,6 +1,6 @@
 # romansort README
 
-Sort any part sections for javascript-style code in intelligent way
+Sort any part sections for javascript-style code in magic way
 
 
 
