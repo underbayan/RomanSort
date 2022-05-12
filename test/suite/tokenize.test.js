@@ -25,7 +25,7 @@ const methodsTest = () => {
             scope: scopeType.comment1,
             scopeText: `// outer commnets for b\n`
         }, {
-            magnetic: '',
+            magnetic: 'up',
             scope: scopeType.normal,
             scopeText: `  public b(args: int[]): /** inner commnets**/ int {\n    /** inner commnets**/\n}\n`
         }, {
@@ -58,21 +58,21 @@ const valueTest = () => {
             scope: 1,
             scopeText: 'public a =[\n    {},\n    [], /** [] */\n    {} // inner {}\n]\n'
         },
-        { magnetic: '', scope: 1, scopeText: '\n' },
+        {magnetic: '', scope: 1, scopeText: '\n'},
         {
             magnetic: 'down',
             scope: 32,
             scopeText: '/** outer commnets for b */\n'
         },
         { magnetic: '', scope: 32, scopeText: 'public b =\n' },
-        { magnetic: '', scope: 4, scopeText: '" 123"\n' },
+        {magnetic: 'up', scope: 4, scopeText: '" 123"\n'},
         { magnetic: '', scope: 4, scopeText: 'public c=\n' },
         {
             magnetic: 'up',
             scope: 1,
             scopeText: '{\n    t: /** t */\n    {},\n\n}\n'
         },
-        { magnetic: '', scope: 1, scopeText: '\n' },
+        {magnetic: '', scope: 1, scopeText: '\n'},
         {
             magnetic: '',
             scope: 1,
@@ -81,7 +81,7 @@ const valueTest = () => {
     ]
 
     tokens.filter(r => r).map((r, index) => {
-        console.log(r, r.scopeText, TokensAssert[index].scopeText)
+        console.log("---------------------------------------------\n", r, TokensAssert[index])
         assert(r.scopeText === TokensAssert[index].scopeText)
         assert(r.magnetic === TokensAssert[index].magnetic)
         assert(r.scope === TokensAssert[index].scope)
