@@ -34,8 +34,8 @@ const methodsTest = () => {
             scopeText: `A = (args: int[])=> {\n    return {Av:{}}\n}\n`
         }
     ]
-    tokens.filter(r => r).map((r, index) => {
-        console.log(r)
+    tokens.filter(r => r).map((r, index) =>
+    {
         assert(r.scopeText === TokensAssert[index].scopeText)
         assert(r.magnetic === TokensAssert[index].magnetic)
         assert(r.scope === TokensAssert[index].scope)
