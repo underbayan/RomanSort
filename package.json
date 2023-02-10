@@ -1,8 +1,8 @@
 {
   "name": "romansort",
   "displayName": "RomanSort",
-  "description": "Intelligent sort tool for javascript style language",
-  "version": "0.0.12",
+  "description": "Sort code segments for javascript style programming language",
+  "version": "0.0.13",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -11,7 +11,9 @@
   ],
   "activationEvents": [
     "onCommand:roman.sort",
-    "onCommand:roman.sort.reverse"
+    "onCommand:roman.sort.reverse",
+    "onCommand:roman.sort.caseInsensitive",
+    "onCommand:roman.sort.reverse.caseInsensitive"
   ],
   "repository": "https://github.com/underbayan/roman-sort.git",
   "icon": "icon.png",
@@ -26,6 +28,14 @@
       {
         "command": "roman.sort.reverse",
         "title": "roman.sort.reverse"
+      },
+      {
+        "command": "roman.sort.caseInsensitive",
+        "title": "roman.sort.caseInsensitive"
+      },
+      {
+        "command": "roman.sort.reverse.caseInsensitive",
+        "title": "roman.sort.reverse.caseInsensitive"
       }
     ]
   },

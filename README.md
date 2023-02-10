@@ -13,7 +13,7 @@ Sort blocks  with nested blocks
 
 - step1: select your code section in editor
 - step2: ctrl+shift+p
-- step3: type ">roman.sort"
+- step3: type ">roman.sort (use "roman.sort.caseInsensitive" to make it case insensitive )
 
 - ![Alt Text](demo1.gif)
 
